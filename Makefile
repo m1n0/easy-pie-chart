@@ -3,10 +3,10 @@ dist: all
 
 all:
 	@echo Compiling coffee script
-	coffee -c *.coffee
+	coffee -c -o ./ coffee/*.coffee
 
 watch:
 	@echo Watch coffee script files
-	coffee -w *.coffee
+	coffee -w -o ./ coffee/*.coffee
 
 .PHONY: dist all watch
